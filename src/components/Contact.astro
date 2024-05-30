@@ -1,0 +1,59 @@
+---
+import mail from '../assets/mail.svg'
+import fb from '../assets/fb.svg'
+import lin from '../assets/in.svg'
+---
+<article id="education"class="snap-center flex flex-col  text-white py-5">
+    <div class="flex flex-col items-center py-5 ">
+        <div class="w-full">
+            <h1 class="text-4xl lg:text-6xl text-white font-bold font-space uppercase" >
+                get in touch
+            </h1>
+            <div class="w-full h-1 border-double border-4 border-ha2 my-4" >
+            </div>
+            <h3 class="text-ha1 font-thin italic font-space">
+               Let's work together.
+            </h3>
+        </div>
+
+    </div>
+    <div class="flex flex-col sm:flex-row justify-around gap-6 py-5">
+       <div class="flex flex-col items-center">
+            <img class="w-16 " src={mail.src} />
+            <a href="mailto:haperdev@gmail.com" target="_blank">
+                <h1 class="text-xl text-white font-space py-3 hover:text-ha1">
+                    haperdev@gmail.com
+                </h1>
+            </a>
+            <h1 class="text-3xl text-ha3 font-bold font-space">
+                Email
+            </h1>
+       </div>
+
+       <div class="flex flex-col items-center">
+            <img class="w-16 " src={lin.src} />
+            <a href="https://www.linkedin.com/in/heiber-perez-rodriguez-9390bb79/" target="_blank">
+                <h1 class="text-xl text-white font-space py-3 hover:text-ha1">
+                    Heiber Perez R
+                </h1>
+            </a>
+            <h1 class="text-3xl text-ha3 font-bold font-space">
+                LinkedIn
+            </h1>
+        </div>
+
+        
+        <div class="flex flex-col items-center">
+            <img class="w-16 " src={fb.src} />
+            <a href="https://www.facebook.com/heiberperezr" target="_blank">
+                <h1 class="text-xl text-white font-space py-3 hover:text-ha1">
+                    Heiber Perez
+                </h1>
+            </a>
+            <h1 class="text-3xl text-ha3 font-bold font-space">
+                Facebook
+            </h1>
+        </div>
+            
+    </div>
+</article>
