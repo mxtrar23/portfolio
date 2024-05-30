@@ -1,56 +1,217 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 ---
 
 <Layout title="Heiber A. Perez">
 	<main class="container m-auto snap-proximity pt-20 mb-9">
-		<Header/>
+		<Header />
 		<article class="main-article snap-center h-svh">
-			<div class=" w-full h-full bg-gradient-to-t from-doce from-0% via-transparent via-50% to-doce to-100% p-5 md:p-10 lg:p-15 flex items-center">
-				<section class="text-white w-full md:w-1/2 lg:w-1/3 py-5 flex gap-5 flex-col bg-doce px-5 bg-opacity-65"  >
-					<h3 class="text-ha1 font-thin italic  font-space" >Hello World!!</h3>
-					<h1 class="text-6xl text-ha3 font-bold font-spartan" >I'm Heiber A. Perez</h1>
-					<h2 class="bg-ha1 w-fit px-4 py-1 font-spartan font-bold text-doce uppercase">Software Developer</h2>
+			<div
+				class="w-full h-full bg-gradient-to-t from-doce from-0% via-transparent via-50% to-doce to-100% p-5 md:p-10 lg:p-15 flex items-center"
+			>
+				<section
+					class="text-white w-full md:w-1/2 lg:w-1/3 py-5 flex gap-5 flex-col bg-doce px-5 bg-opacity-65"
+				>
+					<h3 class="text-ha1 font-thin italic font-space">
+						Hello World!!
+					</h3>
+					<h1 class="text-6xl text-ha3 font-bold font-spartan">
+						I'm Heiber A. Perez
+					</h1>
+					<h2 class="bg-ha1 w-fit px-4 py-1 font-spartan font-bold text-doce uppercase">
+						Software Developer
+					</h2>
 					<p class="font-space">
-						I'am a system engineer, dedicated to software developer full stack.
-Highly enthusiastic about creating to code, alway very eager for internships which improve my skills and work.
+						I'am a system engineer, dedicated to software developer
+						full stack. Highly enthusiastic about creating to code,
+						alway very eager for internships which improve my skills
+						and work.
 					</p>
 				</section>
 				<section></section>
 			</div>
 		</article>
-		<article id="about-me" class="snap-center  flex flex-row justify-around">
-			<section  class="w-1/2 hidden sm:flex justify-center  ">
-				<img class="object-contain w-80 rounded-md drop-shadow-xl saturate-50 " src="/src/assets/me.jpg" />
-			</section>
-			<section class="w-1/2 text-white flex flex-col gap-5">
-				<div class="px-5">
-
-					<h1 class="text-6xl text-white font-bold font-space uppercase" >my biography</h1>
-					<div class="w-full h-1 border-double border-4 border-ha2 my-4"></div>
-					<p class="font-space px-3 ">
-						I'am a system engineer, dedicated to software developer full stack.
-	Highly enthusiastic about creating to code, alway very eager for internships which improve my skills and work.
-	
-	I'am a system engineer, dedicated to software developer full stack.
-	Highly enthusiastic about creating to code, alway very eager for internships which improve my skills and work.
-	
+		<article id="about-me" class="snap-center flex flex-row justify-around">
+			<section class="text-white" >
+				<div class="w-full md:w-auto grid justify-center md:float-left p-2">
+					<img
+						class="m-2 object-contain w-80 rounded-md drop-shadow-xl saturate-50"
+						src="/src/assets/me.jpg"
+					/>
+				</div>
+				<div class="p-5 text-justify  ">
+					<h1 class="text-6xl text-white font-bold font-space uppercase" >
+						my biography
+					</h1>
+					<div
+						class="w-full h-1 border-double border-4 border-ha2 my-4"
+					>
+					</div>
+					<p class="font-space px-3">
+						My name is Heiber Perez a web developer from Colombia,
+						Driven by a curiosity about new ideas with interactive
+						experiences to crafting user-friendly websites and
+						applications. With a fascination for create solutions,
+						the programming code brings a perspective analitic and
+						creative. Whether it's building a platform single or
+						tackling a complex coding challenge.
 					</p>
 				</div>
 				<div class="px-5">
-
-					<h1 class="text-3xl text-white font-bold font-space " >skills & interest</h1>
-					<div class="w-full h-1 border-double border-4 border-ha2 my-4"></div>
+					<h1 class="text-3xl text-white font-bold font-space">
+						Skills 
+					</h1>
+					<div class="flex justify-center flex-wrap space-x-2 font-space font-bold py-5 gap-2">
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>HTML</div><i class="devicon-html5-plain text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>Javascript</div><i class="devicon-javascript-plain text-4xl pr-1" ></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>Bootstrap</div><i class="devicon-bootstrap-plain text-4xl pr-1" ></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>css</div><i class="devicon-css3-plain text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>react</div><i class="devicon-react-original text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>typescript</div><i class="devicon-typescript-plain text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>git</div><i class="devicon-git-plain text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>github</div><i class="devicon-github-original text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>docker</div><i class="devicon-docker-plain text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>linux</div><i class="devicon-linux-plain text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>mongodb</div><i class="devicon-mongodb-plain text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>mysql</div><i class="devicon-mysql-original text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>nodejs</div><i class="devicon-nodejs-plain text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>php</div><i class="devicon-php-plain text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>postgresql</div><i class="devicon-postgresql-plain text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>python</div><i class="devicon-python-plain text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>vuejs</div><i class="devicon-vuejs-plain text-4xl pr-1"></i>
+						</div>
+						<div class="flex items-center space-x-2 text-md px-2 bg-ha4 text-white rounded-full py-1" >
+							<div>photoshop</div><i class="devicon-photoshop-plain text-4xl pr-1"></i>
+						</div>
+					</div>
 				</div>
 			</section>
+		</article>
+		<article id="education"class="snap-center flex flex-col md:flex-row text-white py-3">
+			<div class="p-5  w-full md:w-1/2  flex flex-col justify-center">
+				<h1 class="text-6xl text-white font-bold font-space uppercase" >
+					Education
+				</h1>
+				<div
+					class="w-full h-1 border-double border-4 border-ha2 my-4"
+				>
+				</div>
+			</div>
+			<div class="p-5  w-full md:w-1/2 ">
+				<h1 class="text-7xl text-white font-extralight font-spartan uppercase" >
+					2014 - 2022
+				</h1>
+				<div class="flex flex-col gap-6 py-5">
+					<div>
+						<h1 class="text-3xl text-white font-bold font-space">
+							System Engineer 
+						</h1>
+						<h1 class="text-xl text-white font-space">
+							Universidad Nacional Abierta y a Distancia - UNAD Colombia 
+						</h1>
+					</div>
+					<div>
+						<h1 class="text-3xl text-white font-bold font-space">
+							Information Systems Analysis and Development 
+						</h1>
+						<h1 class="text-xl text-white font-space">
+							Servicio Nacional de Aprendizaje (SENA) 
+						</h1>
+					</div>
+					<div>
+						<h1 class="text-3xl text-white font-bold font-space">
+							JavaScript Full Stack Developer 
+						</h1>
+						<h1 class="text-xl text-white font-space">
+							Platzi 
+						</h1>
+					</div>
+				</div>
+			</div>
+		</article>
+		<article id="experiences"class="snap-center flex flex-col md:flex-row text-white py-3 hidden">
+			<div class="p-5  w-full md:w-1/2  flex flex-col justify-center">
+				<h1 class="text-6xl text-white font-bold font-space uppercase" >
+					experiences
+				</h1>
+				<div
+					class="w-full h-1 border-double border-4 border-ha2 my-4"
+				>
+				</div>
+
+			</div>
+			<div class="p-5  w-full md:w-1/2 ">
+				<h1 class="text-7xl text-white font-extralight font-spartan uppercase" >
+					2014 - 2022
+				</h1>
+				<div class="flex flex-col gap-6 py-5">
+					<div>
+						<h1 class="text-3xl text-white font-bold font-space">
+							System Engineer 
+						</h1>
+						<h1 class="text-xl text-white font-space">
+							Universidad Nacional Abierta y a Distancia - UNAD Colombia 
+						</h1>
+					</div>
+					<div>
+						<h1 class="text-3xl text-white font-bold font-space">
+							Information Systems Analysis and Development 
+						</h1>
+						<h1 class="text-xl text-white font-space">
+							Servicio Nacional de Aprendizaje (SENA) 
+						</h1>
+					</div>
+					<div>
+						<h1 class="text-3xl text-white font-bold font-space">
+							JavaScript Full Stack Developer 
+						</h1>
+						<h1 class="text-xl text-white font-space">
+							Platzi 
+						</h1>
+					</div>
+				</div>
+			</div>
 		</article>
 	</main>
 </Layout>
 
 <style>
 	.main-article {
-		background-image: url('../assets/me.png');
+		background-image: url("../assets/me.png");
 		background-repeat: no-repeat;
 		background-position: right;
 		background-size: contain;

@@ -7,7 +7,7 @@ export default {
 			colors:{
 				transparent: 'transparent',
 				doce:'#121212',
-				ha1:'#376e99',
+				ha1:'#38b5ff',
 				ha2:'#623a92',
 				ha3:'#a8a9ac',
 				ha4:'#40434c',
