@@ -1,54 +1,87 @@
-# Astro Starter Kit: Basics
+# Portfolio Website
 
-```sh
-npm create astro@latest -- --template basics
-```
+This repository contains the source code for a personal portfolio website built using modern web technologies such as HTML, CSS, and JavaScript. The website showcases the developer's skills, projects, and professional experience.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Project Structure
 
 ```text
 /
 ├── public/
-│   └── favicon.svg
+│   ├── images/
+│   │   └── profile.jpg
+│   └── favicon.ico
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   │   ├── Header.js
+│   │   ├── Footer.js
+│   │   ├── ProjectCard.js
+│   │   └── ...
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── About.js
+│   │   ├── Projects.js
+│   │   ├── Contact.js
+│   │   └── ...
+│   ├── styles/
+│   │   ├── global.css
+│   │   └── ...
+│   ├── utils/
+│   │   └── ...
+│   └── index.js
+├── package.json
+├── package-lock.json
+└── README.md
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+The project is structured as follows:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- `public/`: This directory contains static assets like images and the website favicon.
+- `src/components/`: This directory contains reusable React components used throughout the website.
+- `src/pages/`: This directory contains the main pages of the website, each represented as a separate React component.
+- `src/styles/`: This directory contains CSS files for styling the website.
+- `src/utils/`: This directory contains utility functions and other helper modules.
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm start`               | Starts the development server                    |
+| `npm run build`           | Builds the production-ready website             |
+| `npm run preview`         | Previews the production build locally           |
+| `npm run lint`            | Runs linting checks on the codebase             |
+| `npm run format`          | Formats the codebase using Prettier             |
 
-## 👀 Want to learn more?
+## Installation
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+1. Clone the repository: `git clone https://github.com/your-username/portfolio-website.git`
+2. Navigate to the project directory: `cd portfolio-website`
+3. Install dependencies: `npm install`
+
+## Usage
+
+To start the development server, run:
+
+```
+npm start
+```
+
+The website will be accessible at `http://localhost:3000`.
+
+To build the production-ready website, run:
+
+```
+npm run build
+```
+
+The built files will be located in the `dist/` directory.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

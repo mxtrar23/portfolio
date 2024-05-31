@@ -1,4 +1,10 @@
-<article class="main-article snap-center h-svh">
+---
+import img_bg_me from '../assets/me-gray.png'
+import { getImage } from "astro:assets";
+
+const optimizedBackground = await getImage({src: img_bg_me, format: 'webp'});
+---
+<article class="main-article snap-center h-svh"style={`background-image: url(${optimizedBackground.src});`} >
     <div
         class="w-full h-full bg-gradient-to-t from-doce from-0% via-transparent via-50% to-doce to-100% p-5 md:p-10 lg:p-15 flex items-center"
     >
@@ -24,9 +30,9 @@
         <section></section>
     </div>
 </article>
-<style>
+<style >
 	.main-article {
-		background-image: url("../assets/me.png");
+		/* background-image: url("../assets/me.png"); */
 		background-repeat: no-repeat;
 		background-position: right;
 		background-size: contain;
